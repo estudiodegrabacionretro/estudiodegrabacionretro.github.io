@@ -47,6 +47,16 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        .promo-box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 2rem auto;
+            max-width: 800px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
         .contact {
             margin-top: 3rem;
         }
@@ -116,6 +126,10 @@
     <h2>Servicios</h2>
     <p>Ofrecemos grabación, mezcla y masterización. Ya sea que seas un solista o una banda completa, tenemos el espacio y el equipo para llevar tu música al siguiente nivel.</p>
 
+    <div class="promo-box">
+        <p><strong>Comunicado:</strong> Aquí puedes anunciar promociones especiales o información importante.</p>
+    </div>
+
     <div class="contact">
         <button onclick="document.querySelector('.form-container').style.display = 'block';">Contáctanos</button>
         <a href="#">Portafolio</a>
@@ -126,7 +140,7 @@
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="phone">teléfono:</label>
+            <label for="phone">Teléfono:</label>
             <input type="text" id="phone" name="phone" required>
             
             <label for="email">Correo Electrónico:</label>
@@ -142,4 +156,3 @@
 
 </body>
 </html>
-
