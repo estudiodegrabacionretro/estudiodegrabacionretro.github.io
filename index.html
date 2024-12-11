@@ -50,7 +50,7 @@
         .contact {
             margin-top: 3rem;
         }
-        .contact a {
+        .contact a, .contact button {
             display: inline-block;
             padding: 0.8rem 2rem;
             background: #444;
@@ -61,7 +61,41 @@
             border-radius: 5px;
             transition: background 0.3s;
         }
-        .contact a:hover {
+        .contact a:hover, .contact button:hover {
+            background: #666;
+        }
+        .form-container {
+            display: none;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container label {
+            margin: 0.5rem 0;
+        }
+        .form-container input, .form-container textarea {
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background: #444;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 2rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .form-container button:hover {
             background: #666;
         }
     </style>
@@ -82,7 +116,7 @@
     <h2>Servicios</h2>
     <p>Ofrecemos grabación, mezcla y masterización. Ya sea que seas un solista o una banda completa, tenemos el espacio y el equipo para llevar tu música al siguiente nivel.</p>
 
-     <div class="contact">
+    <div class="contact">
         <button onclick="document.querySelector('.form-container').style.display = 'block';">Contáctanos</button>
         <a href="#">Portafolio</a>
     </div>
@@ -91,9 +125,9 @@
         <form action="https://formsubmit.co/tu_correo_ejemplo@example.com" method="POST">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
-            
+
             <label for="phone">teléfono:</label>
-            <input type="text" id="phone" name="phone" required>            
+            <input type="text" id="phone" name="phone" required>
             
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required>
@@ -108,3 +142,4 @@
 
 </body>
 </html>
+
